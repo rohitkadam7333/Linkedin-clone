@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Linkdin-clone</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt="Linkdin logo" /></a>
+            <div class="search-box">
+                <img src="./images/search.png" alt="search logo" />
+                <input type="text" placeholder="search" />
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="./images/home.png" alt="home logo" /><span>Home</span></a></li>
+                <li><a href="#"><img src="./images/network.png" alt="Network logo" /><span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png" alt="job logo" /><span>Jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png" alt="message logo" /><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png" alt="notifications logo" /><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-1.png" alt="user-1" class="navbar-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!-- -----------------profile-drop-down-menu------------------------ -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png">
+                    <div>
+                        <h3>Rohit Kadam</h3>
+                        <a href="./profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- -------------end navbar------------ -->
+
+    <div class="container">
+        <!-- ---------------------left-siderbar----------------------- -->
+        <div class="left-siderbar">
+            <div class="sidebar-profile-box">
+                <img src="./images/cover-pic.png" alt="cover-pic" width="100%" />
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                    <h1>Rohit Kadam</h1>
+                    <h3>Web Developer</h3>
+                    <ul>
+                        <li>Your profile views<span>129</span></li>
+                        <li>Your post views<span>7,648</span></li>
+                        <li>Your connections<span>2K</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="./images/items.png" alt="">My items</a>
+                    <a href="#"><img src="./images/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="./images/recent.png">Web Development</a>
+                <a href="#"><img src="./images/recent.png">User Interface</a>
+                <a href="#"><img src="./images/recent.png">Online Learning</a>
+                <a href="#"><img src="./images/recent.png">Code Better</a>
+                <a href="#"><img src="./images/recent.png">Group Learning</a>
+                <a href="#"><img src="./images/recent.png">Web </a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png">Web Design Group</a>
+                <a href="#"><img src="images/group.png">HTML & CSS Learners</a>
+                <a href="#"><img src="images/group.png">Python & JavaScript Group</a>
+                <a href="#"><img src="images/group.png">Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png">wbdevelopment</a>
+                <a href="#"><img src="images/hashtag.png">userinterface</a>
+                <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+        </div>    
+        <!-- -------------main-content------------------------ -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="./images/user-1.png">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="./images/photo.png">Photo</li>
+                    <li><img src="./images/video.png">Video</li>
+                    <li><img src="./images/event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by:<span>top<img src="./images/down-arrow.png"></span></p>
+            </div>
+              <!-- ----------------------POST 1----------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-2.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>    
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi ducimus ipsam debitis? Doloribus eius soluta, illum quis tempora architecto enim debitis obcaecati repudiandae omnis autem beatae, fuga quae laudantium?</p>
+                <img src="./images/post-image-1.png" width="100%">
+                <div class="post-status">
+                    <div>
+                        <img src="./images/thumbsup.png">
+                        <img src="./images/love.png" >
+                        <img src="./images/clap.png">
+                        <span class="liked-users">Rohit Kadam and 9346 other</span>
+                    </div>
+                    <div>
+                        <span>567 comments &middot; 386 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.png" class="post-activity-user-icon">
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------POST 2----------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>    
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi ducimus ipsam debitis? Doloribus eius soluta, illum quis tempora architecto enim debitis obcaecati repudiandae omnis autem beatae, fuga quae laudantium?</p>
+                <img src="./images/post-image-2.png" width="100%">
+                <div class="post-status">
+                    <div>
+                        <img src="./images/thumbsup.png">
+                        <img src="./images/love.png" >
+                        <img src="./images/clap.png">
+                        <span class="liked-users">Rohit Kadam and 9346 other</span>
+                    </div>
+                    <div>
+                        <span>567 comments &middot; 386 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.png" class="post-activity-user-icon">
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------POST 3----------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-4.png">
+                    <div>
+                        <h1>Blore Mau</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>    
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi ducimus ipsam debitis? Doloribus eius soluta, illum quis tempora architecto enim debitis obcaecati repudiandae omnis autem beatae, fuga quae laudantium?</p>
+                <img src="./images/post-image-3.png" width="100%">
+                <div class="post-status">
+                    <div>
+                        <img src="./images/thumbsup.png">
+                        <img src="./images/love.png" >
+                        <img src="./images/clap.png">
+                        <span class="liked-users">Rohit Kadam and 9346 other</span>
+                    </div>
+                    <div>
+                        <span>567 comments &middot; 386 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.png" class="post-activity-user-icon">
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------POST 4----------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-5.png">
+                    <div>
+                        <h1>Smiyre uhde</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>    
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi ducimus ipsam debitis? Doloribus eius soluta, illum quis tempora architecto enim debitis obcaecati repudiandae omnis autem beatae, fuga quae laudantium?</p>
+                <img src="./images/post-image-4.png" width="100%">
+                <div class="post-status">
+                    <div>
+                        <img src="./images/thumbsup.png">
+                        <img src="./images/love.png" >
+                        <img src="./images/clap.png">
+                        <span class="liked-users">Rohit Kadam and 9346 other</span>
+                    </div>
+                    <div>
+                        <span>567 comments &middot; 386 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./images/user-1.png" class="post-activity-user-icon">
+                        <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------right-sidebar-------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="./images/more.png" class="info-icon">
+                <h1>Trending News</h1>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Careers growing horizontally</a>
+                <span>19h ago &middot; 1,552 readers</span>
+
+                <a href="#">Less work visa for US, more for UK</a>
+                <span>14d ago &middot; 27,341 readers</span>
+
+                <a href="#">More hiring = confidence?</a>
+                <span>14h ago &middot; 7,134 readers</span>
+
+                <a href="#">Gutam Adani is the world's second richest person</a>
+                <span>12h ago &middot; 4,934 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad</small>
+                <p>Master the 5 principles of web Design</p>
+                <div>
+                    <img src="./images/user-1.png">
+                    <img src="./images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy</a>
+                <a href="#">Advertising</a>
+                <a href="#">More</a>
+                <div class="copyright-msg">
+                    <img src="./images/logo.png">
+                    <p>Linkedup &#169; 2023. All right reserved</p>
+                </div>
+                <hr/>
+                <p class="copyright-msg-rohit">Developed by Rohit Kadam 2023,&#169; All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let profileMenu = document.getElementById("profileMenu")
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>
